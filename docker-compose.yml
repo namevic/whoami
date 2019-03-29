@@ -1,0 +1,9 @@
+version: '3'
+services:
+  who_am_i:
+    restart: always
+    build: ./
+    image: who_am_i:1
+    container_name: who_am_i
+    ports:
+      - '80:80'
